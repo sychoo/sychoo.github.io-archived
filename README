@@ -1,0 +1,11 @@
+bug1: category/index.html Everytime when deleting a tag / category,
+      this will be cache left on the server and would compile to html.
+      we can use '$ hexo clean' to deal with it but it will purge the 'sychoo'
+      directory. So be careful. 
+
+warning1: Some of the files under this directory are not compilable 
+  	  from hexo directory, so please do not delete the following 
+	  files and directories:
+	  bio | photos | resumes | img | test | wilkes | robots.txt
+
+

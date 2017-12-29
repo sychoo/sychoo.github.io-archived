@@ -1,0 +1,51 @@
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+     <script src="typed.js" type="text/javascript"></script> 
+     <script> 
+        function typed { 
+         strings: ["Computer Science","Artificial Intelligence","Aerospace Engineering","Web  Developer","Full Stack"], 
+          typeSpeed: 25, 
+          backDelay: 1000, 
+          loop: true, 
+             };
+        
+     </script> 
+
+<div class="content-home text-center">
+  <a class="avatar" href="/">
+    <img src="<%= theme.avatar %>" alt="" />
+  </a>
+  <h1 class="name" style="font-family: <%= theme.blog_name_font_familiy || 'calligraffittiregular' %>">
+    <%= theme.blog_name %>
+  </h1>
+
+
+  <div class="slogan">
+
+
+    <span id="typed"></span>
+
+<%= theme.slogan %>  
+
+<% for (var i = 0; i<theme.slogan.length; i++) { %>
+<strong> <%= theme.slogan[i] %> </strong> </br>
+<%}%>
+</div>
+
+
+  <hr>
+
+  <ul class="text-center nav">
+    <% theme.home_nav.forEach(function(item, i){ %>
+      <li class="item">
+        <% if(item.target_blank === true) { %>
+          <a href="<%= item.url %>" rel="noopener noreferrer" target="_blank"><%= item.name %></a>
+        <% } else { %>
+          <a href="<%= item.url %>"><%= item.name %></a>
+        <% } %>
+        <span>|</span>
+      </li>
+    <% }) %>
+  </ul>
+
+</div>
