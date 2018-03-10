@@ -126,12 +126,12 @@ div.item {
 #timeline section.year {
   position: relative;
 }
-
+/*
 #timeline section.year:first-child section {
   margin-top: -1.3em;
   padding-bottom: 0px;
 }
-
+*/
 #timeline section.year section {
   position: relative;
   padding-bottom: 1.25em;

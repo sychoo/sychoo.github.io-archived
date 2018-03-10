@@ -6,6 +6,8 @@ bug1: category/index.html Everytime when deleting a tag / category,
 warning1: Some of the files under this directory are not compilable 
   	  from hexo directory, so please do not delete the following 
 	  files and directories:
-	  bio | photos | resumes | img | test | wilkes | robots.txt
+	  bio | photos | resumes | img | test | wilkes | tmp | timeline | robots.txt | README | 404.html
+
+
 
 

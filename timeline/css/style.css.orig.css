@@ -21,10 +21,9 @@ body {
 }
 
 a {
-  color: #3CACFC;
+  color: #50585f;
   text-decoration: none;
 }
-
 a:hover {
   color: #383e44;
 }
@@ -41,7 +40,7 @@ div.header {
   text-align: center;
   background: slategrey;
   color: ghostwhite;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 2.3rem 1rem 2.3rem 1rem;
   position: relative;
 }
 div.header:after {
@@ -126,12 +125,10 @@ div.item {
 #timeline section.year {
   position: relative;
 }
-
 #timeline section.year:first-child section {
   margin-top: -1.3em;
   padding-bottom: 0px;
 }
-
 #timeline section.year section {
   position: relative;
   padding-bottom: 1.25em;
