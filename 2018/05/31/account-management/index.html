@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>System Administrator Manual | Simon Chu</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="Simon, Simon Chu, Chu, 初城羽, 初, Wilkes University, Computer Science, Machine Learning, Full Stack, SVM, Python, Java, Software Development, Apple Developer, Android Developer, Web Developer" />
+  
+
+  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152# Created Thu Apr  5 16:39:19 UTC 2018# http://www.comptechdoc.org/os/linux/usersguide/linux_ugusers.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="System Administrator Manual">
+<meta property="og:url" content="http://sychoo.github.io/2018/05/31/account-management/index.html">
+<meta property="og:site_name" content="Simon Chu">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152# Created Thu Apr  5 16:39:19 UTC 2018# http://www.comptechdoc.org/os/linux/usersguide/linux_ugusers.html">
+<meta property="og:locale" content="English">
+<meta property="og:updated_time" content="2018-05-31T20:50:03.676Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="System Administrator Manual">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152# Created Thu Apr  5 16:39:19 UTC 2018# http://www.comptechdoc.org/os/linux/usersguide/linux_ugusers.html">
+
+  
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbe6" rel="stylesheet">
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+
+  
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  <!------Google Ads------->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2506747894115474",
+    enable_page_level_ads: true
+    });
+  </script>
+  <!------/Google Ads------->
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">Index</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">Index</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Blog
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Categ.
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Tags
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Links
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/contact"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Me
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            Find
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-account-management" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">System Administrator Manual</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2018.05.31</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>Simon Chu</span>
+        </span>
+      
+
+      
+
+
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp;hits <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Created Thu Apr  5 16:39:19 UTC 2018</span></span><br><span class="line"><span class="comment"># http://www.comptechdoc.org/os/linux/usersguide/linux_ugusers.html</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Default Groups</span></span><br><span class="line">Administrators : 10000</span><br><span class="line">Developers : 20000</span><br><span class="line"></span><br><span class="line"><span class="comment"># Change users' passwd</span></span><br><span class="line">passwd</span><br><span class="line"></span><br><span class="line"><span class="comment">#  Change users' primary group</span></span><br><span class="line">sudo usermod --gid &lt;group-name&gt; &lt;user-name&gt; </span><br><span class="line"></span><br><span class="line"><span class="comment"># To add a user to a specific group use</span></span><br><span class="line">sudo usermod -G &lt;group-name&gt; -a &lt;user-name&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Add user to a group</span></span><br><span class="line">sudo adduser &lt;user-name&gt; &lt;group-name&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create group with group id</span></span><br><span class="line">groupadd -g &lt;group-id&gt; &lt;group-name&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># list of all the groups</span></span><br><span class="line">cat /etc/group</span><br><span class="line">groups</span><br><span class="line"></span><br><span class="line"><span class="comment"># list of all the users</span></span><br><span class="line">cut -d: -f1 /etc/passwd</span><br><span class="line">cat /etc/passwd</span><br><span class="line"></span><br><span class="line"><span class="comment"># ID Infomation of a user</span></span><br><span class="line">id &lt;user-name&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># find user infomation</span></span><br><span class="line">grep &lt;user-name&gt; /etc/passwd </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Change user infomation</span></span><br><span class="line">    <span class="comment"># Change General infomation</span></span><br><span class="line">    sudo chfn &lt;user-name&gt;</span><br><span class="line">    <span class="comment"># Change Default Shell</span></span><br><span class="line">    sudo chsh &lt;user-name&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Delete users / groups</span></span><br><span class="line">groupdel &lt;group-name&gt;</span><br><span class="line">userdel &lt;user-name&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Default umask </span></span><br><span class="line">0077</span><br><span class="line"></span><br><span class="line"><span class="comment"># Sudoer file to execute certain command</span></span><br><span class="line">leaf ALL=(root) &lt;specific-files&gt;</span><br></pre></td></tr></table></figure>
+
+    
+  </div>
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">Support Us</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持forsigner</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.png" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2018/03/29/vi/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">Close</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Blog
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Categ.
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Tags
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Links
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/contact"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Me
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              Find
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+
+
+
+    
+
+    
+	
+    
+	
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
