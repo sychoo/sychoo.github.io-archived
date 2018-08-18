@@ -1,130 +1,79 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" >
+
 <head>
-    <meta charset="utf-8">
-    <title> Coming Soon | Site Under Construction </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
+  <meta charset="UTF-8">
+  <title> SimonChu.org | Evans 1st Floor </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
 
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
-
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
-
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
-
-.sect {
-    font-size: 15px;
-    letter-spacing: 2px;
-    font-family: "Arial";
-    font-weight: 300;
-}
-        @media only screen and (max-width: 280px) {
-            body, p {
-                width: 95%;
-            }
-            
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-        }
-        
-    </style>
+  
 </head>
+
 <body>
 
-    <h1>E-Bulletin Board For Evans Hall 1st Floor</h1>
-    <br>
-    <h1>Website Will Be Available in Fall 2018~</h1>
-    <br>
-    <h1>Fall Semester Count Down:</h1>
-    <br>
 
-<h3>
-    <!----------Timer------------> 
-<div id="CountMsg" class="HotDate"> 
-<p class="courier">
-<span id="t_d">Days</span> 
-<span id="t_h">Hours</span> 
-<span id="t_m">Minutes</span> 
-<span id="t_s">Seconds</span> 
-	</p>
+<div class="container">
+  <div class="header">
+    <h1>Simon Chu • Bulletin Board</h1>
+    <h4>
+        <a href="/index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/search/index.html">Search</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/wilkes_reslife/">Instagram</a>
+    </h4> 
+  </div>
+
+  
+  <div class="item">
+    <div id="timeline">
+      <div>
+
+<!--------------------YEAR SEPARATOR-------------------->
+
+        <section class="year">
+          <h3>2018</h3>
+
+            <a href='content/moveinday.html'>
+              <section>
+                <h4>August 24</h4>
+                  <ul>
+                    <li>
+                      Get Ready for WilkesU Fall 2018 Move-in Day!
+                    </li>
+                  </ul>
+              </section> 
+            </a>
+
+            <a href='http://wilkes.edu/RA'>
+              <section>
+                <h4>August 12</h4>
+                  <ul>
+                    <li>
+                      RAs Training Starts~
+                    </li>
+                  </ul>
+              </section> 
+            </a>
+
+        </section>
+
+<!--------------------YEAR SEPARATOR-------------------->
+
+
+
+      </div>
+    </div>
+  </div>
 </div>
- 
-<script type = "text/javascript"> 
-function getRTime() { 
-var EndTime = new Date('2018/8/27 6:00:00'); //Due Date
-var NowTime = new Date(); 
-var t = EndTime.getTime() - NowTime.getTime(); 
-/*var d=Math.floor(t/1000/60/60/24); 
-t-=d*(1000*60*60*24); 
-var h=Math.floor(t/1000/60/60); 
-t-=h*60*60*1000; 
-var m=Math.floor(t/1000/60); 
-t-=m*60*1000; 
-var s=Math.floor(t/1000);*/
- 
-var d=Math.floor(t/1000/60/60/24); 
-var h=Math.floor(t/1000/60/60%24); 
-var m=Math.floor(t/1000/60%60); 
-var s=Math.floor(t/1000%60); 
-
-	
-
-		
-		
-document.getElementById("t_d").innerHTML = d + " days"; 
-document.getElementById("t_h").innerHTML = h + " hrs"; 
-document.getElementById("t_m").innerHTML = m + " min"; 
-document.getElementById("t_s").innerHTML = s + " sec"; 
-
-} 
-setInterval(getRTime,1000); 
-</script> 
-	
-	 
-<!----------/timer--------------> 
-</h3>
-
-    <br>
-    <p>«
-        <a href="http://www.simonchu.org">Me</a> / <a href="http://www.wilkes.edu/">More About Wilkes</a> »
-    </p>
+  
+  
 
 
-<br>
-<br>
-<br>
-   <footer>
 
-        <p class="sect">&nbsp;&nbsp;Copyright &copy; Simon Chu&nbsp;&nbsp;</p>       
-
-    </footer>
 
 
 </body>
+
 </html>
