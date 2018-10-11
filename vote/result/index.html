@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<div id="piechart"></div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawVicePresidentChart);
+google.charts.setOnLoadCallback(drawTreasurerChart);
+google.charts.setOnLoadCallback(drawSecretaryChart);
+
+// Draw the chart and set the chart values
+function drawVicePresidentChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Candidates', 'Votes'],
+  ['Andrew Matcho', 5],
+  ['Casey Klaips', 5]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Vice President', 'width':800, 'height':600};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+  chart.draw(data, options);
+}
+
+
+// Draw the chart and set the chart values
+function drawTreasurerChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Candidates', 'Votes'],
+  ['Rima Avasatthi', 5],
+  ['Andrew Chupka', 5]
+
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Treasurer', 'width':800, 'height':600};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+  chart.draw(data, options);
+}
+
+
+// Draw the chart and set the chart values
+function drawSecretaryChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Candidates', 'Votes'],
+  ['Kim Bellard', 5],
+  ['Kayla Gronkowski', 5]
+
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Secretary', 'width':800, 'height':600};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
+  chart.draw(data, options);
+}
+</script>
+</head>
+
+<body>
+
+<h1>2018 - 2019 Math & CS Club</h1>
+<h2>Election Summary</h2>
+    <!--Table and divs that hold the pie charts-->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"class="columns">
+      <tr>
+        <td><div id="piechart1" style="border: 5px solid #ccc"></div></td>
+      </tr>
+      <tr>
+        <td><div id="piechart2" style="border: 5px solid #ccc"></div></td>
+      </tr>
+      <tr>
+        <td><div id="piechart3" style="border: 5px solid #ccc"></div></td>
+      </tr>
+    </table>
+</body>
+</html>
