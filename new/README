@@ -27,6 +27,9 @@
   - set CSS attribute for typed.js
   - https://stackoverflow.com/questions/55203276/skip-button-how-to-stop-a-function-with-another-function
 
+- CSS Animate Library
+  - https://css-tricks.com/css-animation-libraries/
+  
 ISSUE
   - work around of back-drop-filter on firefox
   - links
@@ -36,3 +39,11 @@ TO-DO
   - Hyperlink for Computer Science PhD Student (wikipedia) and UC Irvine (school website https://uci.edu/)
   - effect for hover (turn gray (like Apple gray)))
   - Menu bar 
+    - life
+      - about (过去)
+      - recent （现在）
+      - long term （将来）
+    - career
+    - blog
+    - projects
+    - contact
