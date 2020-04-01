@@ -1,10 +1,45 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
- <span class="element"></span>
+<span class="element"></span>
 
  <script>
-    var typed = new Typed('.element', {
+    /*var typed = new Typed('.element', {
       strings: ["纠正一个错误的方法有很多", "而解决一个错误的终极方法，就是不给它发生的机会。"], //输入内容, 支持html标签
       typeSpeed: 100, //打字速度
       backSpeed: 50 //回退速度
-    });
+    });*/
+/*
+
+var typed = new Typed('.element', {
+  strings: ['This is a JavaScript library', 'This is an ES6 module'],
+  smartBackspace: true // Default value
+});
+*/
+/*
+var typed = new Typed('.element', {
+  strings: ['git push --force ^1000\n `pushed to origin with option force`']
+});
+*/
+var typed = new Typed('.element', {
+  strings: ['<p>Typed.js is ^1000 a <strong>JavaScript</strong> library.</p> <p>It <em>types</em> out sentences.</p>']
+});
+</script>
+
+
+<br>
+<br>
+
+<span id="typed"></span>
+<div id="typed-strings">
+  <hello>Typed.js is ^1000 a <strong>JavaScript</strong> library.</hello>
+  <hello>It <em>types</em> out sentences.</hello>
+</div>
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 50,
+    backSpeed: 25,
+    smartBackspace: true,
+    contentType: 'html'
+
+  });
 </script>

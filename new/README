@@ -24,7 +24,15 @@
 
 - Typed.js
   - https://mattboldt.github.io/typed.js/
-  
+  - set CSS attribute for typed.js
+  - https://stackoverflow.com/questions/55203276/skip-button-how-to-stop-a-function-with-another-function
+
 ISSUE
   - work around of back-drop-filter on firefox
   - links
+
+TO-DO
+  - Dynamic Highlighting (Computer Science PhD Student) (https://www.quora.com/What-do-Computer-Science-PhD-students-do-all-day)
+  - Hyperlink for Computer Science PhD Student (wikipedia) and UC Irvine (school website https://uci.edu/)
+  - effect for hover (turn gray (like Apple gray)))
+  - Menu bar 
