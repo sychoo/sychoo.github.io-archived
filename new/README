@@ -16,7 +16,15 @@
 - rounded-corner blur
   - https://mfreed7.github.io/backdrop-filter-feature/examples/scrollable.html
 
+- Type writter effect
+  - https://css-tricks.com/snippets/css/typewriter-effect/
 
+- Type Written Multiple Lines
+  - https://codepen.io/Bojoer/pen/EZYgeO
+
+- Typed.js
+  - https://mattboldt.github.io/typed.js/
+  
 ISSUE
   - work around of back-drop-filter on firefox
   - links
