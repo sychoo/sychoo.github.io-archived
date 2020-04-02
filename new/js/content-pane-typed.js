@@ -51,8 +51,7 @@ var typedEffect = function () {
   var typed = new Typed('.typed', {
     strings: [html],
     contentType: "html",
-    //typeSpeed: 40,
-    typeSpeed: 0,
+    typeSpeed: 40,
     showCursor: false,
   //  onStop: (arrayPosition, self) => function() {self.option.showCursor = false}
   });
