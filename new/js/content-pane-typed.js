@@ -18,6 +18,16 @@ var introHTML =
   <p id="name">\`Simon Chu\`</p>^500
   <p id="description">And I'm a <strong>Computer Science PhD student</strong> at University of California,^150 Irvine</p>
   `
+
+var introHTMLDisplayAll =
+  `
+  \'
+  <p id="greeting">Hello,^150 World!^350 I'm</p>
+  <p id="name">Simon Chu</p>^500
+  <p id="description">And I'm a <strong>Computer Science PhD student</strong> at University of California,^150 Irvine</p>
+  \'
+  `
+
 var menuHTML =
   `
   \`
@@ -50,12 +60,12 @@ var menuHTML =
       </a>
     </li>
     \`
-    `
+    `;
 
 var checkReferrer = function() {
   ref = document.referrer;
   if (ref.match(/^https?:\/\/([^\/]+\.)?simonchu\.org(\/|$)/i)) {
-    introHTML = "\`" + introHTML + "\`";
+    introHTML = introHTMLDisplayAll;
   }
 }
 
