@@ -48,6 +48,10 @@ TO-DO
   - Hyperlink for Computer Science PhD Student (wikipedia) and UC Irvine (school website https://uci.edu/)
   - effect for hover (turn gray (like Apple gray)))
 
+  - change to vertical if horizontal doesn't fit (menu bar)
+
+  - without typing effect when redirected from any of my current page
+
   - Hyperlink for the menu bar
   - Menu bar 
     - life
@@ -63,4 +67,3 @@ TO-DO
       - maybe have a medium account in the future?
 
     - resume (email verification firebase)
-

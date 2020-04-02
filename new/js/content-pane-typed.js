@@ -12,11 +12,14 @@ var loadJavaScript = function (JavaScriptURL, implementationFunctionName, insert
   insertionLocation.appendChild(scriptTag);
 };
 
-var typedEffect = function () {
-  var html = `
+var introHTML =
+  `
   <p id="greeting">Hello,^150 World!^350 I'm</p>
   <p id="name">\`Simon Chu\`</p>^500
   <p id="description">And I'm a <strong>Computer Science PhD student</strong> at University of California,^150 Irvine</p>
+  `
+var menuHTML =
+  `
   \`
   <hr class="cssanimation sequence fadeInBottom">
   <ul class="cssanimation sequence fadeInBottom">
@@ -48,6 +51,18 @@ var typedEffect = function () {
     </li>
     \`
     `
+
+var checkReferrer = function() {
+  ref = document.referrer;
+  if (ref.match(/^https?:\/\/([^\/]+\.)?simonchu\.org(\/|$)/i)) {
+    introHTML = "\`" + introHTML + "\`";
+  }
+}
+
+var typedEffect = function () {
+  checkReferrer();
+  var html = introHTML + menuHTML;
+
   var typed = new Typed('.typed', {
     strings: [html],
     contentType: "html",
