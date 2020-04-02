@@ -14,9 +14,9 @@ var loadJavaScript = function (JavaScriptURL, implementationFunctionName, insert
 
 var typedEffect = function () {
   var html = `
-  <p id="greeting">Hello, World!^350 I'm</p>
+  <p id="greeting">Hello,^150 World!^350 I'm</p>
   <p id="name">\`Simon Chu\`</p>^500
-  <p id="description">And I'm a <mark>Computer Science PhD student</mark> at UC Irvine</p>`;
+  <p id="description">And I'm a <strong>Computer Science PhD student</strong> at University of California,^150 Irvine</p>`;
   var typed = new Typed('.typed', {
     strings: [html],
     contentType: "html",
@@ -24,7 +24,7 @@ var typedEffect = function () {
     showCursor: false,
   //  onStop: (arrayPosition, self) => function() {self.option.showCursor = false}
   });
-  console.log(typed.option);
+  //console.log(typed.option);
 }
 loadJavaScript('https://cdn.jsdelivr.net/npm/typed.js@2.0.11', typedEffect, document.body);
 
