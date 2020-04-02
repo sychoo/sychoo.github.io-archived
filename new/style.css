@@ -1,30 +1,14 @@
-/* - Type writter effect */
-  /* - https://css-tricks.com/snippets/css/typewriter-effect/ */
-
-/* - Type Written Multiple Lines */
-  /* - https://codepen.io/Bojoer/pen/EZYgeO */
-
 .css-typing p {
   border-right: .15em solid orange;
-  /* font-family: "Courier"; */
-  /* font-size: 14px; */
-  /* white-space: nowrap; */
+  white-space: nowrap;
   overflow: hidden;
 }
 .css-typing p:nth-child(1) {
-  /* overflow: hidden; Ensures the content is not revealed until the animation */
-  /* border-right: .15em solid orange; The typwriter cursor */
-  /* white-space: nowrap; Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  /* letter-spacing: .15em; Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-  /* width: 7.3em;
+  width: 7.3em;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; */
+  animation-fill-mode: forwards;
 }
 
 .css-typing p:nth-child(2) {
@@ -39,24 +23,14 @@
 }
 
 .css-typing p:nth-child(3) {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    type3 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-  /* width: 7.3em; */
-  /* width: 20em;
+  width: 7.3em;
   opacity: 0;
   -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
   animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
   -webkit-animation-delay: 4s;
   animation-delay: 4s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; */
-  
+  animation-fill-mode: forwards;
 }
 
 @keyframes type {
@@ -149,16 +123,18 @@
     border-color: tranparent;
   }
 }
-
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
 }

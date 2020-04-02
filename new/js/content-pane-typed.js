@@ -17,9 +17,9 @@ var typedEffect = function () {
   <p id="greeting">Hello,^150 World!^350 I'm</p>
   <p id="name">\`Simon Chu\`</p>^500
   <p id="description">And I'm a <strong>Computer Science PhD student</strong> at University of California,^150 Irvine</p>
-  <hr>
   \`
-  <ul>
+  <hr class="cssanimation sequence fadeInBottom">
+  <ul class="cssanimation sequence fadeInBottom">
     <li>
       <a href="life/index.html">
         Life
