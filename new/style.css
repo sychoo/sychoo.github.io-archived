@@ -1,15 +1,211 @@
-.cssanimation, .cssanimation span {
+.cssanimation,
+.cssanimation span {
     animation-duration: 1s;
     animation-fill-mode: both;
 }
 
-.cssanimation span { display: inline-block }
+.cssanimation span {
+    display: inline-block
+}
 
-.fadeInBottom { animation-name: fadeInBottom }
+.fadeInBottom {
+    animation-name: fadeInBottom
+}
+
+.fadeInTop {
+  animation-name: fadeInTop
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft
+}
+
+.fadeInRight {
+  animation-name: fadeInRight
+}
+
+/* for menu bar fade-in effect */
+
 @keyframes fadeInBottom {
     from {
         opacity: 0;
         transform: translateY(100%);
     }
-    to { opacity: 1 }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1
+    }
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+/* background image */
+
+.bg-img {
+    /* used to blur background images */
+    /* filter: blur(2px); */
+    /* -webkit-filter: blur(2px); */
+    background-image: url("img/miami-beach.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* case when the browser supports backdrop-filter, blur the background for the content pane */
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .content-pane {
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+}
+
+div.content-pane p#name {
+    line-height: 75px;
+    font-weight: bold;
+    font-size: 75px;
+    margin-bottom: 35px;
+    margin-top: 0px;
+}
+
+div.content-pane p#greeting {
+    margin-top: 0.83em;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+div.content-pane p#description {
+    margin-buttom: 0.83em;
+}
+
+
+/* position texts in the middle of the pane/page */
+
+.content-pane {
+    background-color: rgb(255, 255, 255);
+    /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    position: absolute;
+    border-radius: 20px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 15px;
+    text-align: center;
+    /* line-height: 35px;*/
+}
+
+
+/* for the separator */
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #8c8b8b, #000000, #8c8b8b);
+    background-image: -moz-linear-gradient(left, #8c8b8b, #000000, #8c8b8b);
+    background-image: -ms-linear-gradient(left, #8c8b8b, #000000, #8c8b8b);
+    background-image: -o-linear-gradient(left, #8c8b8b, #000000, #8c8b8b);
+}
+
+
+/* for the menu bar */
+
+li {
+    display: inline-block;
+    font-size: 24px;
+    /* white-space: nowrap; */
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    /* width: 100px; */
+    /* height: 50px; */
+    display: inline-block;
+}
+
+li span {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+
+/*
+@media screen and (max-width: 531px) {
+    li {
+        display: flex;
+        flex-flow: column;
+    }
+    li span {
+        display: none;
+    }
+}
+*/
+
+li a {
+    width: auto;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    /*  padding: 40px 0px; */
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #8c8b8b;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
