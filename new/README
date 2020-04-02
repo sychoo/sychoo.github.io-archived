@@ -30,20 +30,37 @@
 - CSS Animate Library
   - https://css-tricks.com/css-animation-libraries/
   
+- Fade in from bottom
+  - https://codepen.io/cssanimation/pen/oYgXdM
+
+- Different Dividers
+  - https://codepen.io/ibrahimjabbari/pen/ozinB
+
+- Horizontal Navigation Bar
+  - https://www.w3schools.com/css/css_navbar.asp
+
 ISSUE
   - work around of back-drop-filter on firefox
   - links
 
 TO-DO
-  - Dynamic Highlighting (Computer Science PhD Student) (https://www.quora.com/What-do-Computer-Science-PhD-students-do-all-day)
+  - NO Dynamic Highlighting (Computer Science PhD Student) (https://www.quora.com/What-do-Computer-Science-PhD-students-do-all-day)
   - Hyperlink for Computer Science PhD Student (wikipedia) and UC Irvine (school website https://uci.edu/)
   - effect for hover (turn gray (like Apple gray)))
+
+  - Hyperlink for the menu bar
   - Menu bar 
     - life
       - about (过去)
       - recent （现在）
       - long term （将来）
-    - career
-    - blog
-    - projects
-    - contact
+
+    - career (interactive listing of previous positions, resume for download (Capcha verification))
+      - work experience
+      - projects
+
+    - journal (blog posts) (public, private)
+      - maybe have a medium account in the future?
+
+    - resume (email verification firebase)
+
