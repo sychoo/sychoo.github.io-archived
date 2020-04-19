@@ -16,7 +16,7 @@ var loadJavaScript = function(JavaScriptURL, implementationFunctionName, inserti
 var introHTML =
     `
   <p id="greeting">Hello,^150 World!^350 I'm</p>
-  <p id="name">\`Simon Chu\`</p>^500
+  \`<p id="name">Simon Chu</p>\`^500
   <p id="description">And I'm a <strong>Computer Science PhD student</strong> at University of California,^150 Irvine</p>
   `;
 
